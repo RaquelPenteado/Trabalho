@@ -8,7 +8,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <form action="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home.html">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/form.html">Form</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <form class="p-5 mt-sm-4" action="">
         <fieldset>
             <legend>Dados do Cliente</legend>
             <div>
@@ -42,10 +59,10 @@
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="mt-sm-4 border rounded p-4">
             <div>
                 <label class="form-label" for="pet">Tem algum bichinho de estimação no momento?</label>
-                <label>
+                <label class="m-3">
                     <input type="radio" name="pet" value="yes" checked>Sim
                 </label>
                 <label>
@@ -55,7 +72,7 @@
 
             <div>
                 <label class="form-label" for="house">Mora em casa ou apartamento?</label>
-                <label>
+                <label class="m-3">
                     <input type="radio" name="house" value="house" checked>Casa
                 </label>
                 <label>
@@ -65,10 +82,10 @@
 
             <div>
                 <label class="form-label" for="yard">Tem quintal?</label>
-                <label>
+                <label class="m-3">
                     <input type="radio" name="yard" value="yard" checked>Quintal
                 </label>
-                <label>
+                <label class="m-3">
                     <input type="radio" name="yard" value="balcony">Varanda
                 </label>
                 <label>
